@@ -410,6 +410,7 @@ opacity: 0;
 
 .modal__button {
   padding: 9px;
+  width: -webkit-fill-available;
 }
 
 .modal__button-text {
