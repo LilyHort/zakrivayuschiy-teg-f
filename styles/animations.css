@@ -28,6 +28,58 @@
 
 /* like */
 
+.card__icon-button:focus {
+    outline: 2px solid var(--color);
+  }
+  
+.like-icon .main-body {
+    fill: var(--color-icon-countour);
+    opacity: 0;
+    transition: opacity 0.3s linear, fill 0.3s linear;
+  }
+  
+.like-icon:hover .main-body {
+    fill: var(--color-icon-countour);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.05s, fill 0.3s linear 0.05s;
+  }
+  
+.like-icon:hover .core {
+    fill: var(--color-icon-countour);
+    opacity: 1;
+    transition: opacity 0.03s linear 0.03s, fill 0.03s linear 0.05s;
+  }
+  
+.like-icon:active .main-body {
+    fill: var(--color-icon-filling);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.05s, fill 0.3s linear 0.05s;
+  }
+  
+.like-icon:active .core {
+    fill: var(--color-icon-filling);
+    opacity: 1;
+    transition: opacity 0.03s linear 0.03s, fill 0.03s linear 0.05s;
+  }
+  
+.like-icon.is-liked .core {
+    fill: var(--color-icon-filling);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.03s, fill 0.3s linear 0.05s;
+  }
+  
+.like-icon.is-liked .main-body {
+    fill: var(--color-icon-filling);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.05s, fill 0.3s linear 0.05s;
+  }
+  
+.like-icon.is-liked .contour {
+    fill: var(--color-icon-filling);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.07s, fill 0.3s linear 0.05s;
+  }
+
 .sparks {
     opacity: 0;
 }
