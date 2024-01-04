@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./styles/themes.css" />
   <script src="./scripts/set-theme.js"></script>
 </head>
+
 <body class="page">
   <header class="header width-content font-accent">
     <a class="header__link">
@@ -465,8 +466,10 @@
       <p class="modal__text">Вставьте
         дискету, чтобы продолжить</p>
     </div>
-    <button class="modal__button button" type="button" onclick="window['dialog-id'].close()">
-      <span class="modal__button-text button__text">Ok</span></button>
+    <form method="dialog">
+      <button class="modal__button button" type="button" onclick="window['dialog-id'].close()">
+        <span class="modal__button-text button__text">Ok</span></button>
+    </form>
   </dialog>
   <script src="./scripts/like.js"></script>
 </body>
