@@ -4,3 +4,86 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --font-weight-main:  400;
+  --font-weight-main-accent: 700;
+  --background-color: #fff;
+  --color: #000;
+  --color-accent: rgba(0, 0, 0, 0.6);
+  --background-image: 
+    repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      transparent 2px 4px),
+    repeating-linear-gradient(
+      to bottom, 
+      #d3d3d3 0 2px, 
+      transparent 2px 4px),
+    linear-gradient(
+      to bottom, 
+      #e7e7e7 0.01%, 
+      #1a1a1a);
+  --color-text-element: #000;
+  --color-text-element-stroke-panel: #fff;
+  --special-color-button: #000;
+  --color-button-text: #fff;
+  --color-icon-countour: #000;
+  --color-icon-filling: #ff0000;
+  }
+
+:root.theme-dark {
+  --font-weight-main:  465;
+  --font-weight-main-accent: 785;
+  --background-color: #000000;
+  --color:  #00CC14;
+  --color-accent: rgba(0, 204, 20, 0.6);
+  --background-image:  
+    repeating-linear-gradient(
+      to left,
+      #000 0 2px,
+      transparent 2px 4px),
+    repeating-linear-gradient(
+      to bottom, 
+    #000 0 2px, 
+      transparent 2px 4px),
+    linear-gradient(
+      to bottom, 
+      #007f0c, 
+      #004306);
+  --color-text-element: #00CC14; 
+  --color-text-element-stroke-panel: #000;
+  --special-color-button: #00CC14;
+  --color-button-text: #00CC14;
+  --color-icon-countour: #00CC14;
+  --color-icon-filling: #ff0000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-main:  465;
+    --font-weight-main-accent: 785;
+    --background-color: #000000;
+    --color:  #00CC14;
+    --color-accent: rgba(0, 204, 20, 0.6);
+    --background-image:  
+      repeating-linear-gradient(
+        to left,
+      #000 0 2px,
+        transparent 2px 4px),
+      repeating-linear-gradient(       
+        to bottom, 
+      #000 0 2px, 
+        transparent 2px 4px),
+      linear-gradient(
+        to bottom, 
+        #007f0c, 
+        #004306);
+    --color-text-element: #00CC14; 
+    --color-text-element-stroke-panel: #000;
+    --special-color-button: #00CC14;
+    --color-button-text: #00CC14 ;
+    --color-icon-countour: #00CC14;
+    --color-icon-filling: #ff0000;
+    }
+}
